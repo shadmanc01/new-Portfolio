@@ -9,8 +9,14 @@ const TAB_DATA = [
     id: "skills",
     content: (
       <ul className="list-disc pl-2">
+        <li>Next.js</li>
+        <li>React</li>
+        <li>Angular</li>
+        <li>Typescript</li>
+        <li>Python</li>
         <li>Node.js</li>
         <li>Express</li>
+        <li>Flask</li>
         <li>PostgreSQL</li>
         <li>Sequelize</li>
         <li>JavaScript</li>
@@ -23,8 +29,12 @@ const TAB_DATA = [
     id: "education",
     content: (
       <ul className="list-disc pl-2">
-        <li>Fullstack Academy of Code</li>
-        <li>University of California, Santa Cruz</li>
+        <li>The Marcy Lab School - Brooklyn, NY</li>
+        <li style={{listStyle:'none', padding:'.8vh'}}>Software Engineering Fellowship</li>
+        <li>SUNY Farmingdale - Farmingdale, NY </li>
+        <li style={{listStyle:'none', padding:'.8vh'}}>Finance | 3.2 GPA</li>
+        <li>The City College of New York - New York, NY </li>
+        <li style={{listStyle:'none'}}>Electrical Engineering | 3.2 GPA</li>
       </ul>
     ),
   },
@@ -35,6 +45,9 @@ const TAB_DATA = [
       <ul className="list-disc pl-2">
         <li>AWS Cloud Practitioner</li>
         <li>Google Professional Cloud Developer</li>
+        <li>Google Data Analytics</li>
+        <li>Power BI Practitioner</li>
+        <li>Foundational Javascript Security</li>
       </ul>
     ),
   },
@@ -53,7 +66,7 @@ const AboutSection = () => {
   return (
     <section className="text-white" id="about">
       <div className="md:grid md:grid-cols-2 gap-8 items-center py-8 px-4 xl:gap-16 sm:py-16 xl:px-16">
-        <Image src="/images/about-image.png" width={500} height={500} />
+        <Image src="/images/about-image.jpeg" width={500} height={500} />
         <div className="mt-4 md:mt-0 text-left flex flex-col h-full">
           <h2 className="text-4xl font-bold text-white mb-4">About Me</h2>
           <p className="text-base lg:text-lg">

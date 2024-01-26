@@ -5,6 +5,7 @@ import { TypeAnimation } from "react-type-animation";
 import { motion } from "framer-motion";
 import Link from "next/link";
 
+
 const HeroSection = () => {
   return (
     <section className="lg:py-16">
@@ -24,11 +25,9 @@ const HeroSection = () => {
               sequence={[
                 "Shadman",
                 1000,
-                "a Frontend Developer",
+                "a Developer",
                 1000,
-                "a Backend Developer",
-                1000,
-                "a Digital Product Specialist @ IKEA",
+                "a Product Specialist @ IKEA",
                 1000,
                 "a Product Manager",
                 1000,
@@ -36,7 +35,11 @@ const HeroSection = () => {
                 1000,
                 "a Poet",
                 1000,
-                "a Poet",
+                "a Teacher",
+                1000,
+                "a Learner",
+                1000,
+                "Shadman",
                 1000,
               ]}
               wrapper="span"
@@ -55,11 +58,12 @@ const HeroSection = () => {
               Hire Me
             </Link>
             <Link
-              href="/"
+              href="https://docs.google.com/document/d/1MaAA_swK8r8nLVCYBqlEkTAQx5gEDOVcGOZFMItzUeE/edit?usp=sharing"
+              download="cv"
               className="px-1 inline-block py-1 w-full sm:w-fit rounded-full bg-gradient-to-br from-green-500 to-blue-500 hover:bg-slate-800 text-white mt-3"
             >
               <span className="block bg-[#121212] hover:bg-slate-800 rounded-full px-5 py-2">
-                Download CV
+                Download Resume
               </span>
             </Link>
           </div>
