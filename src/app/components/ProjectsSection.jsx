@@ -7,17 +7,19 @@ import { motion, useInView } from "framer-motion";
 const projectsData = [
   {
     id: 1,
-    title: "AIngka",
-    description: "An AI planning/designing assisstant powered by Google Gemini Ultra. AIngvar scans your space and recommends furniture based on your needs and preferences. It even keeps up with market trends to suggest what's popular.",
+    title: "AIngvar",
+    description:
+      "An AI planning/designing assisstant powered by Google Gemini Ultra. AIngvar scans your space and recommends furniture based on your needs and preferences. It even keeps up with market trends to suggest what's popular.",
     image: "/images/projects/1.JPEG",
     tag: ["All", "Web"],
-    gitUrl: "https://github.com/shadmanc01/AIngka",
-    previewUrl: "https://github.com/shadmanc01/AIngka",
+    gitUrl: "https://github.com/shadmanc01/AIngvar",
+    previewUrl: "https://github.com/shadmanc01/AIngvar",
   },
   {
     id: 2,
     title: "mentee.",
-    description: "mentee. is an application for high-school graduates or GED holders from underprivileged communities and nontraditional backgrounds looking to build career skills through mentorship and community. ",
+    description:
+      "mentee. is an application for high-school graduates or GED holders from underprivileged communities and nontraditional backgrounds looking to build career skills through mentorship and community. ",
     image: "/images/projects/2.png",
     tag: ["All", "Web"],
     gitUrl: "https://github.com/mentee-marcy",
@@ -26,7 +28,8 @@ const projectsData = [
   {
     id: 3,
     title: "snkrHub",
-    description: "snkrHub is an online portfolio which allows users to compile their sneakers and add sneakers to their wishlist. Displaying current market prices along with a total estimation of value for your collection. ",
+    description:
+      "snkrHub is an online portfolio which allows users to compile their sneakers and add sneakers to their wishlist. Displaying current market prices along with a total estimation of value for your collection. ",
     image: "/images/projects/3.png",
     tag: ["All", "Web"],
     gitUrl: "https://github.com/shadmanc01/snkrHub",
@@ -35,7 +38,8 @@ const projectsData = [
   {
     id: 4,
     title: "DoMore",
-    description: "DoMore is an interactive productivity app, centered around the user and their mental well-being. DoMore was built using Javascript, CSS, HTML, Bootstrap with supplemental applications such as Figma and Photoshop to design the UI.",
+    description:
+      "DoMore is an interactive productivity app, centered around the user and their mental well-being. DoMore was built using Javascript, CSS, HTML, Bootstrap with supplemental applications such as Figma and Photoshop to design the UI.",
     image: "/images/projects/4.png",
     tag: ["All", "Mobile"],
     gitUrl: "https://github.com/shadmanc01/DoMore",
@@ -44,7 +48,8 @@ const projectsData = [
   {
     id: 5,
     title: "Into the Tall Grass",
-    description: "My first game! Collaborated with a team to create a game using primarily Javascript. Took charge of sprite creation, enemy properties, map creation, player properties, and functions reliant on decrementing health.",
+    description:
+      "My first game! Collaborated with a team to create a game using primarily Javascript. Took charge of sprite creation, enemy properties, map creation, player properties, and functions reliant on decrementing health.",
     image: "/images/projects/5.jpeg",
     tag: ["All", "Web"],
     gitUrl: "https://github.com/shadmanc01/IntoTheTallGrass",
@@ -53,7 +58,8 @@ const projectsData = [
   {
     id: 6,
     title: "For the Bee's",
-    description: "My first HTML project! Developed a fully dynamic website with a team with a one-week timeline. Utilized agile work environment to assign tasks, responsibilities, and deadlines.",
+    description:
+      "My first HTML project! Developed a fully dynamic website with a team with a one-week timeline. Utilized agile work environment to assign tasks, responsibilities, and deadlines.",
     image: "/images/projects/6.png",
     tag: ["All", "Web"],
     gitUrl: "https://github.com/noelfernandez98/ForTheBees_Project",

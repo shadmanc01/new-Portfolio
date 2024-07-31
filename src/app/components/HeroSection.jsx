@@ -5,7 +5,6 @@ import { TypeAnimation } from "react-type-animation";
 import { motion } from "framer-motion";
 import Link from "next/link";
 
-
 const HeroSection = () => {
   return (
     <section className="lg:py-16">
@@ -16,7 +15,7 @@ const HeroSection = () => {
           transition={{ duration: 0.5 }}
           className="col-span-8 place-self-center text-center sm:text-left justify-self-start"
         >
-          <h1 className="text-white mb-4 text-4xl sm:text-5xl lg:text-8xl lg:leading-normal font-extrabold">
+          <h1 className="text-white mb-4 text-3xl sm:text-5xl lg:text-5xl lg:leading-normal font-extrabold">
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-green-400 to-blue-600">
               Hey, I&apos;m{" "}
             </span>
@@ -27,12 +26,10 @@ const HeroSection = () => {
                 1000,
                 "a Developer",
                 1000,
-                "a Product Specialist @ IKEA",
-                1000,
+                "a Product Specialist",
+                500,
                 "a Product Manager",
-                1000,
-                "a UI/UX Designer",
-                1000,
+                500,
                 "a Poet",
                 1000,
                 "a Teacher",
@@ -47,8 +44,14 @@ const HeroSection = () => {
               repeat={Infinity}
             />
           </h1>
-          <p style={{padding:'3vh'}}className="text-[#ADB7BE] text-base sm:text-lg mb-6 lg:text-xl">
-          Business-oriented with the drive to learn and collaborate. My Interests include, yet are not limited to, the arts, creative writing, interior design, web development, and software development. I aspire to simplify the world with one line of code at a time.
+          <p
+            style={{ padding: "3vh" }}
+            className="text-[#ADB7BE] text-base sm:text-lg mb-6 lg:text-xl"
+          >
+            Business-oriented with the drive to learn and collaborate. My
+            Interests include, yet are not limited to, the arts, creative
+            writing, interior design, web development, and software development.
+            I aspire to simplify the world with one line of code at a time.
           </p>
           <div>
             <Link
@@ -74,7 +77,10 @@ const HeroSection = () => {
           transition={{ duration: 0.5 }}
           className="col-span-4 place-self-center mt-4 lg:mt-0"
         >
-          <div style={{borderRadius: '25vh', overflow: 'hidden'}}className="rounded-full bg-[#181818] w-[250px] h-[250px] lg:w-[400px] lg:h-[400px] relative">
+          <div
+            style={{ borderRadius: "25vh", overflow: "hidden" }}
+            className="rounded-full bg-[#181818] w-[250px] h-[250px] lg:w-[400px] lg:h-[400px] relative"
+          >
             <Image
               src="/images/hero-image.png"
               alt="hero image"
