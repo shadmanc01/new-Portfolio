@@ -10,6 +10,12 @@ import { TypescriptOriginal } from "devicons-react";
 import { PostgresqlPlainWordmark } from "devicons-react";
 import { SequelizeOriginal } from "devicons-react";
 import { JavascriptPlain } from "devicons-react";
+import { GatsbyOriginal } from 'devicons-react';
+import { JestPlain } from 'devicons-react';
+import { ExpressOriginal } from 'devicons-react';
+import { NodejsPlainWordmark } from 'devicons-react';
+import { FlaskOriginalWordmark } from 'devicons-react';
+
 
 // import NextjsLineWordmark from 'devicons-react/lib/icons/NextjsLineWordmark';
 const styles = {
@@ -27,6 +33,11 @@ const styles = {
   },
   iconStyle: {
     padding: ".5rem",
+  },
+  darkIconStyle: {
+    padding: ".5rem",
+    fill: "white",
+    color: "white",
   },
 };
 const TAB_DATA = [
@@ -57,14 +68,20 @@ const TAB_DATA = [
           <JavascriptPlain size={70} style={styles.iconStyle} />
         </li>
         <li style={styles.icon}>
-          <ReactOriginalWordmark size={70} style={styles.iconStyle} />
+          <GatsbyOriginal size={70} style={styles.iconStyle} />
         </li>
         <li style={styles.icon}>
-          <ReactOriginalWordmark size={70} style={styles.iconStyle} />
+          <JestPlain size={70} style={styles.iconStyle} />
         </li>
-        <li style={styles.icon}>Node.js</li>
-        <li style={styles.icon}>Express</li>
-        <li style={styles.icon}>Flask</li>
+        <li style={styles.icon}>
+          <ExpressOriginal size={70} style={styles.darkIconStyle} />
+        </li>
+        <li style={styles.icon}>
+          <NodejsPlainWordmark size={70} style={styles.darkIconStyle} />
+        </li>
+        <li style={styles.icon}>
+          <FlaskOriginalWordmark size={70} style={styles.darkIconStyle} />
+        </li>
       </ul>
     ),
   },
