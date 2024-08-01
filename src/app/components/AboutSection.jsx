@@ -2,25 +2,69 @@
 import React, { useTransition, useState } from "react";
 import Image from "next/image";
 import TabButton from "./TabButton";
+import { NextjsLine } from "devicons-react";
+import { ReactOriginalWordmark } from "devicons-react";
+import { AngularOriginal } from "devicons-react";
+import { PythonOriginalWordmark } from "devicons-react";
+import { TypescriptOriginal } from "devicons-react";
+import { PostgresqlPlainWordmark } from "devicons-react";
+import { SequelizeOriginal } from "devicons-react";
+import { JavascriptPlain } from "devicons-react";
 
+// import NextjsLineWordmark from 'devicons-react/lib/icons/NextjsLineWordmark';
+const styles = {
+  gridContainer: {
+    display: "grid",
+    gridTemplateColumns: "repeat(auto-fit, minmax(120px, 1fr))", // Adjust the min width as necessary
+    gap: "1rem",
+    listStyleType: "none",
+    padding: 0,
+  },
+  icon: {
+    display: "flex",
+    justifyContent: "center",
+    alignItems: "center",
+  },
+  iconStyle: {
+    padding: ".5rem",
+  },
+};
 const TAB_DATA = [
   {
     title: "Skills",
     id: "skills",
     content: (
-      <ul className="list-disc pl-2">
-        <li>Next.js</li>
-        <li>React</li>
-        <li>Angular</li>
-        <li>Typescript</li>
-        <li>Python</li>
-        <li>Node.js</li>
-        <li>Express</li>
-        <li>Flask</li>
-        <li>PostgreSQL</li>
-        <li>Sequelize</li>
-        <li>JavaScript</li>
-        <li>React</li>
+      <ul style={styles.gridContainer}>
+        <li style={styles.icon}>
+          <ReactOriginalWordmark size={70} style={styles.iconStyle} />
+        </li>
+        <li style={styles.icon}>
+          <AngularOriginal size={70} style={styles.iconStyle} />
+        </li>
+        <li style={styles.icon}>
+          <PythonOriginalWordmark size={70} style={styles.iconStyle} />
+        </li>
+        <li style={styles.icon}>
+          <TypescriptOriginal size={70} style={styles.iconStyle} />
+        </li>
+        <li style={styles.icon}>
+          <PostgresqlPlainWordmark size={70} style={styles.iconStyle} />
+        </li>
+        <li style={styles.icon}>
+          <SequelizeOriginal size={70} style={styles.iconStyle} />
+        </li>
+        <li style={styles.icon}>
+          <JavascriptPlain size={70} style={styles.iconStyle} />
+        </li>
+        <li style={styles.icon}>
+          <ReactOriginalWordmark size={70} style={styles.iconStyle} />
+        </li>
+        <li style={styles.icon}>
+          <ReactOriginalWordmark size={70} style={styles.iconStyle} />
+        </li>
+        <li style={styles.icon}>Node.js</li>
+        <li style={styles.icon}>Express</li>
+        <li style={styles.icon}>Flask</li>
       </ul>
     ),
   },
@@ -30,11 +74,15 @@ const TAB_DATA = [
     content: (
       <ul className="list-disc pl-2">
         <li>The Marcy Lab School - Brooklyn, NY</li>
-        <li style={{listStyle:'none', padding:'.8vh'}}>Software Engineering Fellowship</li>
+        <li style={{ listStyle: "none", padding: ".8vh" }}>
+          Software Engineering Fellowship
+        </li>
         <li>SUNY Farmingdale - Farmingdale, NY </li>
-        <li style={{listStyle:'none', padding:'.8vh'}}>Finance | 3.2 GPA</li>
+        <li style={{ listStyle: "none", padding: ".8vh" }}>
+          Finance | 3.2 GPA
+        </li>
         <li>The City College of New York - New York, NY </li>
-        <li style={{listStyle:'none'}}>Electrical Engineering | 3.2 GPA</li>
+        <li style={{ listStyle: "none" }}>Electrical Engineering | 3.2 GPA</li>
       </ul>
     ),
   },
