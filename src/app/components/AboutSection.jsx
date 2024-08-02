@@ -10,18 +10,18 @@ import { TypescriptOriginal } from "devicons-react";
 import { PostgresqlPlainWordmark } from "devicons-react";
 import { SequelizeOriginal } from "devicons-react";
 import { JavascriptPlain } from "devicons-react";
-import { GatsbyOriginal } from 'devicons-react';
-import { JestPlain } from 'devicons-react';
-import { ExpressOriginal } from 'devicons-react';
-import { NodejsPlainWordmark } from 'devicons-react';
-import { FlaskOriginalWordmark } from 'devicons-react';
+import { GatsbyOriginal } from "devicons-react";
+import { JestPlain } from "devicons-react";
+import { ExpressOriginal } from "devicons-react";
+import { NodejsPlainWordmark } from "devicons-react";
+import { FlaskOriginalWordmark } from "devicons-react";
+import CCNY from "../../../public/images/education/ccny.png";
+import Farmingdale from "../../../public/images/education/farmingdale.png";
 
-
-// import NextjsLineWordmark from 'devicons-react/lib/icons/NextjsLineWordmark';
 const styles = {
   gridContainer: {
     display: "grid",
-    gridTemplateColumns: "repeat(auto-fit, minmax(120px, 1fr))", // Adjust the min width as necessary
+    gridTemplateColumns: "repeat(auto-fit, minmax(120px, 1fr))",
     gap: "1rem",
     listStyleType: "none",
     padding: 0,
@@ -39,7 +39,19 @@ const styles = {
     fill: "white",
     color: "white",
   },
+  educationItem: {
+    display: "flex",
+    alignItems: "center",
+    marginBottom: "1rem",
+  },
+  educationText: {
+    marginLeft: "1rem",
+    fontSize: "1rem",
+    color: "white",
+    fontWeight: "bold",
+  },
 };
+
 const TAB_DATA = [
   {
     title: "Skills",
@@ -89,17 +101,19 @@ const TAB_DATA = [
     title: "Education",
     id: "education",
     content: (
-      <ul className="list-disc pl-2">
-        <li>The Marcy Lab School - Brooklyn, NY</li>
-        <li style={{ listStyle: "none", padding: ".8vh" }}>
-          Software Engineering Fellowship
+      <ul>
+        <li style={styles.educationItem}>
+          <Image src={CCNY} alt="CCNY" width={50} height={50} />
+          <span style={styles.educationText}>
+            City College of New York || 3.2 GPA
+          </span>
         </li>
-        <li>SUNY Farmingdale - Farmingdale, NY </li>
-        <li style={{ listStyle: "none", padding: ".8vh" }}>
-          Finance | 3.2 GPA
+        <li style={styles.educationItem}>
+          <Image src={Farmingdale} alt="Farmingdale" width={50} height={50} />
+          <span style={styles.educationText}>
+            Farmingdale State College || 3.5 GPA
+          </span>
         </li>
-        <li>The City College of New York - New York, NY </li>
-        <li style={{ listStyle: "none" }}>Electrical Engineering | 3.2 GPA</li>
       </ul>
     ),
   },
@@ -131,7 +145,12 @@ const AboutSection = () => {
   return (
     <section className="text-white" id="about">
       <div className="md:grid md:grid-cols-2 gap-8 items-center py-8 px-4 xl:gap-16 sm:py-16 xl:px-16">
-        <Image src="/images/about-image.jpeg" width={500} height={500} />
+        <Image
+          src="/images/about-image.jpeg"
+          alt="About Me"
+          width={500}
+          height={500}
+        />
         <div className="mt-4 md:mt-0 text-left flex flex-col h-full">
           <h2 className="text-4xl font-bold text-white mb-4">About Me</h2>
           <p className="text-base lg:text-lg">
