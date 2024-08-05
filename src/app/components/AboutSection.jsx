@@ -17,6 +17,10 @@ import { NodejsPlainWordmark } from "devicons-react";
 import { FlaskOriginalWordmark } from "devicons-react";
 import CCNY from "../../../public/images/education/ccny.png";
 import Farmingdale from "../../../public/images/education/farmingdale.png";
+import AWS from "../../../public/images/certs/aws.png";
+import Data from "../../../public/images/certs/data.png";
+import Google from "../../../public/images/certs/google.png";
+import PowerBi from "../../../public/images/certs/powerbi.png";
 
 const styles = {
   gridContainer: {
@@ -101,7 +105,7 @@ const TAB_DATA = [
     title: "Education",
     id: "education",
     content: (
-      <ul>
+      <ul style={styles.gridContainer}>
         <li style={styles.educationItem}>
           <Image src={CCNY} alt="CCNY" width={50} height={50} />
           <span style={styles.educationText}>
@@ -121,12 +125,20 @@ const TAB_DATA = [
     title: "Certifications",
     id: "certifications",
     content: (
-      <ul className="list-disc pl-2">
-        <li>AWS Cloud Practitioner</li>
-        <li>Google Professional Cloud Developer</li>
-        <li>Google Data Analytics</li>
-        <li>Power BI Practitioner</li>
-        <li>Foundational Javascript Security</li>
+      <ul style={styles.gridContainer}>
+        <li style={styles.icon}>
+        <Image src={AWS} alt="AWS" width={90} />
+        </li>
+        <li style={styles.icon}>
+        <Image src={Google} alt="Google" width={90} />
+        </li>
+        <li style={styles.icon}>
+        <Image src={PowerBi} alt="PowerBi" width={90} />
+        </li>
+        <li style={styles.icon}>
+
+        </li>
+        
       </ul>
     ),
   },
